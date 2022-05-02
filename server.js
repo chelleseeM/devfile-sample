@@ -51,8 +51,8 @@ app.use(require('pino-http')({logger: pino}));
 
 app.get('/', (req, res) => {
   // Use req.log (a `pino` instance) to log JSON:
-  req.log.info({message: 'This is my final project for CSC-227_Spring 2022!'});
-  res.send('This is my final project for CSC-227_Spring 2022!');
+  req.log.info({message: 'Hi, this is my final project for CSC-227_Spring 2022!...Chelsey Mincey (clmincey)'});
+  res.send('Hi, this is my final project for CSC-227_Spring 2022!...Chelsey Mincey (clmincey)');
 });
 
 app.get('*', (req, res) => {
