@@ -51,8 +51,8 @@ app.use(require('pino-http')({logger: pino}));
 
 app.get('/', (req, res) => {
   // Use req.log (a `pino` instance) to log JSON:
-  req.log.info({message: 'Hello from Node.js Starter Application!'});
-  res.send('Hello from Node.js Starter Application!');
+  req.log.info({message: 'This is my final project for CSC-227_Spring 2022!'});
+  res.send('This is my final project for CSC-227_Spring 2022!');
 });
 
 app.get('*', (req, res) => {
